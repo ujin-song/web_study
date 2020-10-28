@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본속성 : html <!--:html은 웹접근성을 위한 표시--></title>
+</head>
+<body>
+    <h1>html</h1>
+    <h2>1.heading tag</h2>
+
+
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    
+    <hr>
+
+    <h2>2. 문단 tag</h2>
+    <!-- strong 태그는 중요한 타이틀에 사용 -->
+    <strong style="color:red">중요 타이틀</strong>
+    <!-- b태그는 중요하진 않지만 볼드체로 넣고 싶을때 사용 -->
+    <p><b>문단 단락</b>을 의미합니다.</p>
+    
+    <p>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.<br>문단 단락을 의미합니다.</p>
+
+    <pre>
+자동으로 행이 줄바꿈됩니다.
+
+자동으로 행이 줄바꿈됩니다.
+
+자동으로 행이 줄바꿈됩니다.
+
+자동으로 행이 줄바꿈됩니다.
+    </pre>
+<hr>
+<h2>3. 주소 tag</h2>
+<address>
+    경기도 부천시 상동로 578 메가플러스 6층
+    032-555-7777
+</address>
+
+<hr>
+
+<h2>4. 링크 tag</h2>
+<!-- 절대 경로 -->
+
+<a href="https://www.naver.com/">Naver</a><br>
+<!-- 새창열림 -->
+<a href="https://www.naver.com/" target="_blank" title="새창 열림">Naver 새창 열림</a>
+
+
+<br>
+<br>
+<!-- 상대 경로 -->
+<!-- ./는 현재폴더 ../는 상위폴더 -->
+<a href="./index.html" >상대 경로-같은폴더</a><br>
+<a href="./images/layout.jpg">상대경로-하위 폴더</a><br>
+<a href="../layout-html5.jpg">상대경로-상위 폴더</a><br>
+<a href="../00-desgin/test/test.html">상대경로-상위 폴더 > 자식 > 자식 파일</a><br>
+<a href="../../작업/banner.jpg">상대경로 - 조부모 폴더</a>
+
+<hr>
+
+<h2>5. 이미지 tag</h2>
+<!-- 웹접근성 : alt 속성에 배너의 모든 내용을 넣어주어야 함. -->
+<!-- 절대속성 -->
+<img src="https://ssl.pstatic.net/tveta/libs/1306/1306926/c54c82d4aa055ba7f107_20201006112817568_5.jpg" alt="초록우산 어린이재단 꿈마저 낡아버릴 것 같은 비닐하우스 속 컨테이너 박스 모든 정기후원자님께 카카오 미니C+피규어를 보내드립니다 6살 윤아의 집 자세히 보기">
+
+<!-- 상대속성 -->
+<img src="./images/layout.jpg" alt="html 레이아웃 구조">
+<a href="https://www.naver.com/" target="_blank" title="새창 열림">
+    <img src="https://s.pstatic.net/static/www/mobile/edit/2020/1015/mobile_170457479735.png" alt="부마민주항쟁 41주년 민주여정의 시작">
+</a>
+
+</body>
+</html>

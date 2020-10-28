@@ -1,0 +1,43 @@
+@charset "UFT-8";
+/* reset */
+*{margin:0; padding:0; list-style: none;text-decoration:none; color:#333; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;
+}
+
+
+.wrap{width:1200px; margin:0 auto; background: #f0f0f0;}
+
+#header{width:100%;height:80px;display: flex; justify-content: space-between; align-items: center; background: #fff;}
+#header h1 a{font-family: 'Hi Melody', cursive;}
+#header nav ul{/*width:800px;*/display: flex; justify-content: flex-end; }
+#header nav ul li a{display:inline-block; padding:0 30px; font-size:18px; font-weight:900; /* height:80px; line-height:80px;*/}
+
+
+ul.nav-depth1 li{text-align: right; position: relative; width:160px; text-align: center;}
+
+ul.nav-depth1 > li > a::before{content: "";display:inline-block; width:4px; height: 4px; background: #ccc; vertical-align: middle; margin-top: -5px; margin-right: 10px; border-radius: 50%;}
+ul.nav-depth1 > li:last-child > a::after{display:none;}
+
+ul.nav-depth2{flex-direction: column; position: absolute; top:30px; left:0;  text-align: center; line-height: 2; background:#fff; border:1px solid #333; }
+ul.nav-depth1 li ul li a::after {
+    content: "\f105";  font-family: 'Line Awesome Free'; font-weight: 900;
+}
+
+
+
+
+/* .slide ul li{width:100%; height:300px; background: #888; display:none;}
+.slide ul li:nth-child(1){display:block !important;} */
+/* .slide{ height:300px;} */
+.slide ul{display: flex; justify-content: space-between;}
+.slide ul li{width:30%; background: #eee; height:300px; display: flex; justify-content: center; align-items: center;}
+
+
+.container {display: flex;justify-content: space-between;}
+.container section {width:30%; height:200px; display: flex; justify-content: center; align-items: center;background: #ddd;}
+/* .container section:nth-child(2){margin:0 1%; background: #fff;} */
+
+footer{display: flex; justify-content: space-between; align-items: center; height:100px; background: #000;}
+footer h1{width:10%;}
+footer h1 a{color:#888; display: flex; align-items: center; justify-content: center;}
+footer .copyright {color:#888; width:50%; display: flex; align-items: center; justify-content: center;}
+footer .sns a {color:#888; width:20%;}

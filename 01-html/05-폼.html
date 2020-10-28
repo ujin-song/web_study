@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 : html</title>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <h2></h2>
+    <form action="" method="get">
+        <fieldset>
+            <legend>회원가입</legend>
+            <!-- 단순링크 -->
+            <a href="#">확인</a><br>
+            <!-- 정보를 서버로 보낼때 -->
+            <input type="button" value="확인"><br>
+
+            <!-- checkbox _복수선택-->
+            <input type="checkbox">포토샵
+             <input type="checkbox">일러스트<br>
+
+             <!-- checkbox 웹접근성 _내용을 클릭해도 체크됨. -->
+             <input type="checkbox" id="potoshop">
+             <label for="potoshop">포토샵</label>
+             <!-- id값과 for값의 내용이 동일 -->
+             <input type="checkbox" id="illustration">
+             <label for="illustration">일러스트</label><br>
+                <!-- radio_ 단일선택  name에 동일한 내용을 써주어야 radio버튼이 됨.(동일한 세트에 넣어줌)-->
+            <input type="radio" id="fmale" name="sex">
+            <label for="fmale">여성</label>
+            <input type="radio" id="male"  name="sex">
+            <label for="male">남성</label>
+            
+            <br>
+
+            <input type="color"><br>
+            <input type="date"><br>
+            <input type="datetime-local"><br>
+           
+            <input type="file"><br>
+            <input type="hidden"><br>
+            <input type="image" src="url"><br>
+            <input type="month"><br>
+            <input type="number"><br>
+
+            <!-- password _ 폰트를 굴림체이나 돋움체 (일반 폰트) 사용 -->
+            <input type="password"><br>
+
+            <input type="range"><br>
+            <!-- reset 취소버튼 -->
+            <input type="reset" value="취소"><br>
+            <input type="search" value="검색"><br>
+            <!-- submit 확인버튼 _ 서버로 정보를 넘겨 -->
+            <input type="submit" value="확인"><br>
+            <hr>
+            <!-- 역할에 따라 모바일 자판이 변경됨 -->
+            <input type="email"><br>
+            <!-- placeholder 예시, value : 실제 값  -->
+            <input type="tel" value="전화번호"><br>
+            
+            <label for="phone">핸드폰</label>
+            <select name="" id="phone"">
+                <option value="선택">선택</option>
+                <option value="010">010</option>
+                <option value="010">011</option>
+                <option value="010">016</option>
+                <option value="010">019</option>
+            </select> -
+            <input type="tel"  placeholder="3111" title="가운데 번호 4자리">-
+            <input type="tel"  placeholder="2469" title="마지막 번호 4자리"><br>
+
+            <input type="text" placeholder="아이디"><br>
+            <input type="time"><br>
+            <input type="url"><br>
+            <input type="week">
+            <br>
+            <hr>
+            <br>
+            <textarea name="" id="" cols="30" rows="10">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magni reprehenderit, delectus atque ex, ipsa odit blanditiis consequuntur perspiciatis illum dolorem nisi ullam officia voluptas aliquam dolorum mollitia! Quis, vitae?
+            </textarea>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

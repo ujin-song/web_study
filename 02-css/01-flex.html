@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex :css</title>
+    <style>
+        ul{list-style: none; background: lightpink;}
+        li {width:100px; height: 100px;margin:10px; text-align: center;line-height: 100px;background: #fff;}
+    </style>
+</head>
+<body>
+    <h1>FLEX</h1>
+    <style>
+        .flex1{display:flex;}
+    </style>
+    <ul class="flex1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- flex1 -->
+    
+    <style>
+        .flex2{display: flex; flex-direction: column;}
+        /*
+        flex-direction: column; 가로 > 세로정렬로 변경(반응형에서 모바일로 보여질때)
+         flex-direction: column-reverse; 는 반대 방향
+         flex-direction: row; 가로방향 (기본적 값이라 안써도 됨.)
+         flex-direction: row-reverse; 반대방향 순으로 변경 (321순으로)
+         flex-wrap: wrap; 반응형일때 줄바꿈
+         flex-wrap: nowrap; 줄바꿈안함
+         */
+    </style>
+    <ul class="flex2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- flex2 -->
+    <style>
+        .flex3{display: flex;  flex-wrap: wrap;}
+    </style>
+    <ul class="flex3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <!-- flex3 -->
+
+
+   <br>
+    <hr>
+
+    <h2>justify-content</h2>
+    <style>
+        .flex4{display: flex; justify-content: center;}
+    </style>
+    <ul class="flex4">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- flex4 -->
+    
+    <style>
+        .flex5{display: flex; justify-content: flex-end;}
+    </style>
+    <ul class="flex5">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+       <!-- flex5 -->
+
+       <style>
+        .flex6{display: flex;justify-content: space-around;}
+    </style>
+    <ul class="flex6">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- flex6 -->
+
+    <style>
+        .flex7{display: flex;justify-content: space-between;}
+    </style>
+    <ul class="flex7">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- flex7-->
+    <br>
+    <hr>
+    <h2>align-items</h2>
+    <style>
+        .flex8{display: flex; height: 200px; align-items: center;}
+    </style>
+    <ul class="flex8">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- flex8-->
+    <br>
+    <hr>
+    <h2>align-content</h2>
+    <style>
+        .flex9{display: flex; height: 1000px; flex-wrap: wrap; align-content: space-between;}
+    </style>
+    <ul class="flex9">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+    </ul>
+    <br>
+    <hr>
+    <h2>완벽한 가운데 정렬</h2>
+    <style>
+        .flex10{
+            display: flex;
+         justify-content: center; /*가로 가운데 정렬*/
+         height:500px; align-items: center; /*세로 가운데 정렬*/
+         }
+    </style>
+    <ul class="flex10">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+   
+</body>
+</html>

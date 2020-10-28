@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float : css</title>
+    <style>
+        *{margin: 0 auto; padding:0; list-style: none; text-decoration: none; font-size:16px; color:#888; box-sizing: border-box;  font-family: 'Noto Sans KR', sans-serif; }
+    </style>
+</head>
+<body>
+    <style>
+        clear-g::after{
+            display: block;
+            clear:both;
+            content:'';
+        }
+
+        header{
+            background: #f6f6f6; 
+            margin: 0 auto;
+            /* float 해제방법 */
+            overflow: hidden; 
+            width: 1200px;
+             } 
+        header h1{float: left; width: 100px; height: 100px; background: #333;}
+        header nav{float: right; width: 100px; height: 100px; background: #666666;}
+    </style>
+    <header>
+        <h1><a href="#">로고</a></h1>
+        <nav>메뉴</nav>
+    </header>
+    <!-- float의 높이값을 보이게 해주려면, 높이값을 지정해주던가 / overflow :hidden을 넣어주면 된다.  / clear 가능-->
+
+    <br>
+    <style>
+        .type2{}
+        .type2 h1{float: left;}
+        .type2 nav{float: left;}
+    </style>
+    <header class="type2">
+        <h1><a href="#">로고</a></h1>
+        <nav>메뉴</nav>
+    </header>
+
+    <style>
+      .container section{float: left;}
+    </style>
+    <div class="container clear-g">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+    </div>
+
+</body>
+</html>

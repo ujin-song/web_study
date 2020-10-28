@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position:css</title>
+</head>
+<body>
+    <h1>샘플</h1>
+    <style>
+        *{padding:0; margin:0;list-style: none; text-decoration: none; box-sizing: border-box;line-height: 1.5; color:#333}
+        .wrap{width:1000px;  overflow: hidden; position:relative; margin:0 auto;}
+        ul { width: 1020px; overflow: hidden; margin:0 -10px; }
+        ul li {float: left; width: 33.333%; padding:0 10px;position: relative; }
+        /* ul li:first-child {margin-left:0;} */
+        ul li a{display:block; position: relative;}
+        ul li a p{display:block; background: rgba(0, 0, 0, 0.75); width: 100%; padding:14px 20px; text-align:center;position:absolute; bottom:6px; left:0; color:#fff; letter-spacing: -0.5px;font-size:18px; font-weight:600; height:80px; transition: height 2s;}
+        img{width: 100%;   /* position:absolute; top:0; left:0;*/}
+        .more {position:absolute; top:5px; right:0; color:#666; font-size:14px;}
+
+        .list-thumb a:hover p{
+            top:0;
+            height:100%;
+            padding:180px 20px;
+            background: rgba(88, 212, 181, 0.75);
+    
+        }
+    </style>
+    <div class="wrap">
+        <h2>셀프웨딩</h2>
+        <ul class="list-thumb">
+            <li>
+                <a href="#">
+                    <img src="./images/thumb1.jpeg" alt="핫토픽썸네일">
+                    <p>셀프 웨딩을 위해 준비한 것들</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/thumb2.jpeg" alt="핫토픽썸네일">
+                    <p>셀프 웨딩을 위해 준비한 것들</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/thumb3.png" alt="핫토픽썸네일">
+                    <p>셀프 웨딩을 위해 준비한 것들</p>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="more">더보기+</a>
+</div>
+    
+</body>
+</html>

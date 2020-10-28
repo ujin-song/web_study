@@ -1,0 +1,51 @@
+@charset "UFT-8";
+/* 기본 reset */
+* {
+    margin: 0; 
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #303030;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;        
+}
+
+ /* .clear::after{content:''; display:block; clear:both;} */
+
+ header {position:fixed; z-index:999; display:block; background:#222; top:0; left:0; width:100%; height:80px; line-height:100px; overflow: hidden; position: fixed;}
+ header * {color:#fff; font-size:20px;}
+ h1 {
+   background: url('../images/logo.png') 0 0 no-repeat;
+   text-indent: -9999px;
+   width:151px;
+   height:34px;
+   float: left;
+  /*  position:absolute;
+   top:50%;
+   left:0;
+   margin-top:-17px; */
+   margin-top:23px;
+ }
+
+ header nav {float:right;}
+ nav ul li{float:left; /* margin-left:40px; */}
+ /* nav ul li:first-child{float:left; margin-left:0px;} */
+ nav ul li a{display:block; height:80px; line-height:80px; padding:0 20px;}
+
+ .sec-video{ width:800px;  margin:100px auto 0; position: relative;}
+ .iframe-video {display:block;}
+
+
+a.btn- {display:block; width:100px; height:100px; border-radius: 50%; background: rgba(0, 0, 0, 0.8); color:#fff; text-align:center; position: absolute;  top:50%; transform: translateY(-50%);} 
+a.btn-pre{left:-50px;}
+a.btn-next{right:-50px;}
+i.las {color:#fff; font-size:60px;line-height: 100px;}
+.blind {display:inline-block; text-indent: -9999px; font-size:0; line-height:0px;}
+
+.video-dot{position: absolute; bottom:12px; left:50%; transform:translateX(-50%);/* margin-left:-44px;  text-align: center; */}
+.video-dot a{display:inline-block; text-indent: -9999px; width:10px; height:10px; background:#fff; border-radius: 50%; margin:0 8px;}
+
+.video-desc {width:800px; margin:0 auto; }
+.video-desc strong{display:block;font-size:25px; color:#000; margin:20px 0;}
+.video-desc .txt {color:#666; height:150px; overflow-y:auto; border: 1px solid #ddd; padding:10px 20px;}

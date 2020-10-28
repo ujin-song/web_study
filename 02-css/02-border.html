@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border : css</title>
+</head>
+<body>
+    <h1>border</h1>
+
+    <style>
+        p{
+            width: 300px;height: 300px;
+            border: 10px solid #000;
+            padding: 10px;
+            box-sizing:border-box;
+        }
+    </style>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam earum rem, cupiditate at omnis distinctio quidem reiciendis ab ipsa velit et corporis voluptates quis, perspiciatis rerum incidunt quae! Iure?</p>
+
+    <br>
+
+    <h2>border radius</h2>
+    <style>
+        .radius{
+            width: 300px;  height: 100px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .radius2{
+            width: 200px;height: 200px;
+            background: tomato; 
+            border-radius: 50%;
+        }
+
+            .radius3{
+            width: 200px;height: 200px;
+            background: tomato; 
+            border-radius: 10px 50px 100px;
+        }
+    </style>
+
+    <div class="radius"> border radius </div>
+    <br>
+    <div class="radius2"> border radius2 </div>
+    <br>
+    <div class="radius3"> border radius3 </div>
+</body>
+</html>

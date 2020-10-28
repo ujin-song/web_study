@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float : css</title>
+    <style>
+        *{
+            margin: 0 auto; padding:0; line-height: 1.5; list-style: none; text-decoration: none; color:#333; box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>float</h1>
+    <style>
+        ul.list-1 {overflow: hidden;}
+        ul.list-1 li {background: #f6f6f6; width:30%; height:100px; float: left;border: 1px solid #000; margin: 0 5% 20px 0;}
+        ul.list-1 li:nth-child(3n){margin-right:0%;}
+
+        .list-2 {background: #f6f6f6;}
+        .list-2 li{width:100px; height:100px; background: #ffe0e0; border: 1px solid rgb(216, 102, 102); float: left;}
+    </style>
+    <ul class="list-1">
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+    </ul>
+
+    <h2>박스정렬 type2</h2>
+    <ul class="list-2">
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+        <li><a href="#">box</a></li>
+    </ul>
+
+</body>
+</html>

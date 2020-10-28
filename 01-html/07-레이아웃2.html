@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃2 : html</title>
+    <style>
+        body{margin:0 auto; padding:0;}
+        ul {list-style: none;}
+        a {text-decoration: none; color:#000;}
+        .warp{width:1200px; margin:0 auto; padding:0; background:#eee;}
+
+        #header{ margin:0; height:100px; background:tan; display: flex; justify-content: space-between;}
+        #header h1{text-align:left;}
+        #header h1 a{display:inline-block; font-size:35px; font-weight:900; }
+        #header nav{}
+        #header nav ul{display: flex;}
+        #header nav ul li {padding:5px 20px;}
+        #header nav ul li a{ font-size:18px; font-weight:900;}
+
+        .slide ul{display:flex; height:300px;}
+        .slide ul li{width:100%; background:#888;}
+
+        .container{display:flex;}
+        .container section{width:33.3%; height:200px;}
+        .container section.banner{background: #fff;;}
+        footer{display: flex; justify-content: space-between; background: #888;}
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <header id="header">
+            <h1><a href="#">강원천문대</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">강원천문대</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">천문대예약</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header -->
+
+        <div class="slide">
+            <ul>
+                <li>슬라이드-1</li>
+                <li>슬라이드-2</li>
+                <li>슬라이드-3</li>
+            </ul>
+        </div>
+        <!-- slide -->
+
+        <div class="container">
+            <section>
+                <h2>공지사항</h2>
+                <div class="cont">
+                    공지사항 내용이 들어갑니다.
+                </div>
+            </section>
+            <!--section01  -->
+
+            <section class="banner">
+                <h2>배너</h2>
+                <div class="cont">
+                    <a href="#"><img src="" alt="천문대 배너"></a>
+                </div>
+            </section>
+            <!--section02  -->
+
+            <section>
+                <h2>바로가기</h2>
+                <div class="cont">
+                    바로가기 내용이 들어갑니다.
+                </div>
+            </section>
+            <!--section03  -->
+
+        </div>
+        <footer>
+            <h1><a href="#">강원천문대</a></h1>
+
+             <div class="copyright">COPYRIGHT © 2020 강원천문대 All Rights Reserved</div>
+             <div class="sns">sns</div>
+
+        </footer>
+        <!-- footer -->
+    
+</body>
+</html>
